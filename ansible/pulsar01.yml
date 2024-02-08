@@ -85,7 +85,7 @@
         - "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBABRaLHL8mgW86rbtdUh6TY4rs7/la8hAGeSQ3jBF7LMwYZnbS32YDMYvDq3KgNu5WqSMFvkxNm3vfTAbd8CXBfakwDBFBaD9kO0b2t4/p4VoFUsd3B2OvmTR7Bsg7OxTGJJ7aUP/SzTg+Z4NzsmHwQ9h31gfI7n/buZD4S1edQke19Y6w== dominguj@informatik.uni-freiburg.de"
   roles:
     - geerlingguy.repo-epel
-    - usegalaxy_eu.handy.os_setup
+      #- usegalaxy_eu.handy.os_setup
     - usegalaxy-eu.autoupdates
     - influxdata.chrony
     # - autofs
@@ -99,5 +99,5 @@
     - role: usegalaxy-eu.fslimit
       vars:
         ulimit_fsize_unit: "condor.service"
-        ulimit_fsize_soft: 10740000000  # 10GB (adjust according to your storage capacity)
-        ulimit_fsize_hard: 26840000000  # 25GB (adjust according to your storage capacity)
+        ulimit_fsize_soft: 4740000000  # 10GB (adjust according to your storage capacity)
+        ulimit_fsize_hard: 8840000000  # 25GB (adjust according to your storage capacity)

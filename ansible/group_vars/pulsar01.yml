@@ -91,8 +91,8 @@ docker_daemon_options: {}
 #     - twd01            -rw,hard,nosuid      zfs0f.galaxyproject.eu:/export/twd01
 
 # Role: pulsar_htcondor_master_and_client
-condor_host: "192.52.44.223"
-condor_allow_write: "192.52.40.0/21"
-condor_allow_administrator: "192.52.40.0/21, 192.52.44.223"
-condor_fs_domain: p01.uni-freiburg.de
-condor_uid_domain: p01.uni-freiburg.de
+condor_host: "192.168.0.40"
+condor_allow_write: "192.168.0/21"
+condor_allow_administrator: "192.168.0./21, 192.168.0.40"
+condor_fs_domain: app01.inb-cluster.bsc.es
+condor_uid_domain: app01.inb-cluster.bsc.es
